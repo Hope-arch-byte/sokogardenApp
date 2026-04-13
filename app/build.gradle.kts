@@ -39,8 +39,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
 
+    //1st 2 are used to ensure image from the backend can be seen
     implementation("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+    //used to fetch APIs
     implementation("com.loopj.android:android-async-http:1.4.11")
 
     implementation(libs.androidx.constraintlayout)

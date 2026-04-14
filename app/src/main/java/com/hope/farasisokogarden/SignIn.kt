@@ -27,7 +27,7 @@ class SignIn : AppCompatActivity() {
             val signInLink = Intent(applicationContext, SignUp::class.java)
             startActivity(signInLink)
         }
-        //http://hopegathoni.alwaysdata.net/api/signup
+
         //http://hopegathoni.alwaysdata.net/api/getproductdetails
         //http://hopegathoni.alwaysdata.net/api/mpesa_payment
 

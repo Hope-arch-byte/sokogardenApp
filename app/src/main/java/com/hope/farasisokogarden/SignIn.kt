@@ -28,7 +28,6 @@ class SignIn : AppCompatActivity() {
             startActivity(signInLink)
         }
 
-        //http://hopegathoni.alwaysdata.net/api/getproductdetails
         //http://hopegathoni.alwaysdata.net/api/mpesa_payment
 
 

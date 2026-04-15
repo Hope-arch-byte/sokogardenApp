@@ -3,10 +3,12 @@ package com.hope.farasisokogarden
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ProgressBar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,5 +30,15 @@ class MainActivity : AppCompatActivity() {
             val signUpIntent = Intent(applicationContext, SignUp::class.java)
             startActivity(signUpIntent)
         }
+
+        // fetch progress bar and recycler view by their ids
+        val progressbar = findViewById<ProgressBar>(R.id.progressbar)
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+
+        val api = "http://hopegathoni.alwaysdata.net/api/getproductdetails"
+
+        val helper = ApiHelper(applicationContext)
+        helper.loadProducts(api,recyclerView,progressbar)
+
     }
 }

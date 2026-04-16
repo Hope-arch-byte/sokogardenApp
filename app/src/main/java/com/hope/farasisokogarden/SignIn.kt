@@ -28,7 +28,7 @@ class SignIn : AppCompatActivity() {
             startActivity(signInLink)
         }
 
-        //http://hopegathoni.alwaysdata.net/api/mpesa_payment
+
 
 
         //find the edittext button by id

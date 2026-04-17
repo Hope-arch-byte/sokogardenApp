@@ -40,5 +40,12 @@ class MainActivity : AppCompatActivity() {
         val helper = ApiHelper(applicationContext)
         helper.loadProducts(api,recyclerView,progressbar)
 
+        val about = findViewById<Button>(R.id.about)
+        about.setOnClickListener {
+            val aboutIntent = Intent(applicationContext, About::class.java)
+            startActivity(aboutIntent)
+        }
+
+
     }
 }

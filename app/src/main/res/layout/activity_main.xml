@@ -48,6 +48,28 @@
 
     </LinearLayout>
 
+    <Button
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/about"
+        android:text="About Info"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#673AB7"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/voice"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#673AB7"
+        android:padding="10dp"
+        android:text="Voice Assistant"
+        android:textSize="20sp" />
+
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
